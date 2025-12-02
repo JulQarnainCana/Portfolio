@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "Visual Graphic Design NC III",
+        "issuer": "TESDA",
+        "date": "June 14, 2023",
+        "image_url": "images/NC3.jpg"
+    },
+    {
+        "id": 2,
+        "title": "SQL and Relational Database",
+        "issuer": "Cognitive Class",
+        "date": "October 30, 2024",
+        "image_url": "images/SQLRelationalDB.png"
+    },
+    {
+        "id": 3,
+        "title": "Project Management 101",
+        "issuer": "Ask Lex PH Academy | Alpha.",
+        "date": "September 30, 2025",
+        "image_url": "images/projectmanage.png"
+    }
+]

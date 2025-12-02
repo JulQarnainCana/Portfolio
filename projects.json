@@ -1,0 +1,28 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "title": "E-Commerce UI/UX",
+            "description": "A modern and user-friendly E-Commerce UI/UX designed for easy navigation, smooth product browsing, and a seamless shopping experience.",
+            "image": "images/UI.png",
+            "link": "https://www.figma.com/design/cwQlDfdQJY6esN1MAoUNTg/UI-UX---TechCart?node-id=0-1&p=f&t=uHgFnSS6kLCbvFDh-0",
+            "tags": ["UI/UX", "Figma", "E-Commerce"]
+        },
+        {
+            "id": 2,
+            "title": "CRUD Books",
+            "description": "A simple CRUD Books that allows users to Create, Read, Update, and Delete book records. It manages book information such as title, author, genre, and publication year, providing an easy way to organize and maintain a digital library.",
+            "image": "images/CRUD.png",
+            "link": "https://jul.gt.tc/APPDEV_PHP/index.php",
+            "tags": ["CRUD", "PHP", "Database Management", "Web Application"]
+        },
+        {
+            "id": 3,
+            "title": "Expo Snack",
+            "description": "An Expo Snack perfume shop app with an Add-to-Cart system connected to a database for storing products and cart data.",
+            "image": "images/EXPO.png",
+            "link": "https://snack.expo.dev/@neu_cana_julqarnain/371d0a",
+            "tags": ["Mobile App", "Expo", "React Native", "E-Commerce"]
+        }
+    ]
+}

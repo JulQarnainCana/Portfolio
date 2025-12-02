@@ -1,0 +1,61 @@
+[
+  {
+    "id": 1,
+    "title": "Exploring PHP for Web",
+    "description": "PHP is a server-side scripting language for creating dynamic, data-driven websites. It handles databases, forms, sessions, and backend logic to seamlessly interact with front-end design.",
+    "long_description": "I learned that PHP is a server-side scripting language used to create dynamic and interactive web pages. It can connect with databases, handle form data, manage sessions, and generate content dynamically. Understanding PHP helps in building responsive and data-driven websites where backend logic interacts with front-end design seamlessly.",
+    "image_url": "images/PHP.png" 
+  },
+  {
+    "id": 2,
+    "title": "Command Injection",
+    "description": "Exploited a Command Injection vulnerability in DVWA (Low security level) to execute system commands through unvalidated input, demonstrating how attackers can reveal server directories and user privileges without proper input validation.",
+    "long_description": "What I learned in was that the Damn Vulnerable Web Application (DVWA), set to the Low security level, had a Command Injection vulnerability that I was able to effectively find and attack. This experiment showed how a web application feature (such as the ping tool) that accepts unvalidated input may be used by an attacker to execute arbitrary commands on the host server. I was able to ascertain the server's current working directory (pwd) and the low-privilege user (whoami) that the web server process is operating as by chaining commands using the && operator (e.g., 127.0.0.1 && pwd or 127.0.0.1 && whoami). This emphasizes how important it is to have strong input cleanliness and validation in order to stop remote code execution.",
+    "image_url": "images/SQL Command.png" 
+  },
+  {
+    "id": 3,
+    "title": "SQL Injection: DVWA Setup and Bypassing Authentication",
+    "description": "Performed a manual SQL Injection attack in a DVWA lab environment (using TryHackMe and VirtualBox), leveraging payloads like '%' or '0'='0' to bypass user ID validation and extract all user records from the database.",
+    "long_description": "What I learned here Using tools like TryHackMe, VirtualBox, I was able to create and access a vulnerable lab environment (Damn Vulnerable Web Application, or DVWA). So as to exploit a low-security setup, the main focus was on manually carrying out a SQL Injection attack with the payload '%' or '0'='0'. In order to get around the user ID check and expose every user record from the users table, this method effectively changed the original query to be always true.",
+    "image_url": "images/SQL_Injection.jpg" 
+  },
+  {
+    "id": 4,
+    "title": "Applying Object-Oriented Programming in Our Website Project",
+    "description": "Applied Object-Oriented Programming (OOP) to structure our e-commerce web application, creating modular classes for products, users, carts, and orders to improve code organization, reusability, and scalability for new features like categories and payment options..",
+    "long_description": "From our e-commerce project, I learned how to use Object-Oriented Programming (OOP) to structure a web application effectively. We created classes for products, users, carts, and orders, each with properties and methods to manage their behaviors. By applying encapsulation, inheritance, and modular design, we made the code more organized, reusable, and easier to maintain. This approach also allowed us to efficiently add new features, such as product categories or payment options, without affecting the existing system.",
+   "image_url": [
+    "images/OOP1.png",
+    "images/OOP.jpg"
+  ] 
+  },
+  {
+    "id": 5,
+    "title": "Linux Fundamentals Part 1: Navigating the Command Line and File System",
+    "description": "Studied the basics of Linux through TryHackMe’s Linux Fundamentals Part 1, learning core CLI navigation, file system structure, and essential commands like pwd, ls, cd, touch, and mkdir, along with using man pages for documentation.",
+    "long_description": "This knowledge piece covers the essential foundational concepts introduced in TryHackMe's Linux Fundamentals Part 1 module. It focuses on how to interact with the Linux operating system primarily through the command-line interface (CLI). You'll find notes on basic navigation using commands like pwd, ls, and cd, as well as understanding the file system hierarchy (/home, /etc, /bin). Furthermore, it includes initial steps on interacting with files and directories **(e.g., touch, mkdir), and how to use helpful tools like the man pages for command documentation. This section sets the stage for any subsequent work in penetration testing, system administration, or development on a Linux machine.",
+    "image_url": "images/Linux Fundamentals.png" 
+  },
+  {
+    "id": 6,
+    "title": "Understanding Public Key Exchange and Email Encryption",
+    "description": "Explored public key cryptography using Mailvelope, learning how users exchange public keys to securely encrypt and decrypt emails, ensuring message confidentiality and protection from unauthorized access.",
+    "long_description": "From this activity, I gained knowledge about how public key cryptography enables secure communication between two users. By exchanging public keys, both participants can safely encrypt and decrypt messages using tools like Mailvelope. The process from importing a public key, composing and encrypting an email, to decrypting the received message demonstrates how encryption ensures message confidentiality and protects information from unauthorized access.",
+    "image_url": "images/Message.jpg" 
+  },
+  {
+    "id": 7,
+    "title": "Simple To-Do List in Laravel",
+    "description": "Built a Laravel to-do list application to practice using models and controllers for managing tasks and database operations",
+    "long_description": "While learning Laravel, I built a to-do list application which helped me understand how models and controllers work. I learned that models represent and interact with the database, making it easy to perform CRUD operations. Controllers allowed me to manage the application’s logic, handle user requests, and connect the models to the views. Through this project, I gained practical experience in structuring a Laravel application and managing data flow efficiently",
+    "image_url": "images/Laravel.png" 
+  },
+  {
+    "id": 8,
+    "title": "Firebase Realtime DB with PHP",
+    "description": "PHP application demonstrating CRUD operations on Firebase Realtime Database, allowing remote data management without a traditional SQL server",
+    "long_description": "I learned how to perform CRUD operations on Firebase Realtime Database using a custom PHP class. By sending HTTP requests (POST, GET, PATCH, DELETE) to Firebase’s JSON endpoints, I can add, read, update, and delete records. This approach allows a PHP backend to manage data remotely without a traditional SQL database.",
+    "image_url": "images/firebase.png" 
+  }
+]
