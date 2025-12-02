@@ -1,0 +1,27 @@
+{
+  "title": "Vulnerability Cataloging and Exploit Tools",
+  "id": "VULN-006",
+  "excerpt": "A brief overview of systems and tools used globally to catalog, track, and exploit known security weaknesses and vulnerabilities.",
+  "full_content": [
+    {
+      "heading": "Common Vulnerabilities and Exposures (CVE)",
+      "type": "paragraph",
+      "text": "A worldwide standard system used to catalog vulnerabilities and security issues. Each entry provides a unique, standardized identifier, making it easier for security teams to track and reference specific flaws. Format Example: `CVE-2024-29988`."
+    },
+    {
+      "heading": "Exploit Database",
+      "type": "paragraph",
+      "text": "A publicly maintained list and archive that catalogs exploit codes from various authors, offering Proof-of-Concept code for known vulnerabilities. It is used by security researchers for testing and by attackers for malicious purposes."
+    },
+    {
+      "heading": "Security Testing Tools",
+      "type": "bullet_points",
+      "intro": "Tools and systems used for ethical hacking and security practice:",
+      "points": [
+        "Metasploit: A powerful framework for developing, testing, and executing exploit code.",
+        "Burp Suite: A comprehensive platform used for performing security testing of web applications.",
+        "AttackBox: Often refers to a pre-configured Linux System (like Kali Linux) accessible from a browser, used for security testing and exploitation practice in controlled environments."
+      ]
+    }
+  ]
+}

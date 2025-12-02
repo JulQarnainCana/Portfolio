@@ -1,0 +1,55 @@
+{
+  "title": "CWE-79: Cross-Site Scripting (XSS) Details",
+  "id": "XSS-011",
+  "excerpt": "Detailed explanation of CWE-79, how XSS works, the three main types of XSS (Reflected, Stored, DOM-Based), and the resulting attack consequences.",
+  "full_content": [
+    {
+      "heading": "CWE-79 Definition ",
+      "type": "paragraph",
+      "text": "Cross-Site Scripting (XSS) is a web security vulnerability that allows an attacker to compromise the interactions that users have with a vulnerable application. The core issue is CWE-79: Improper Neutralization of Input During Web Page Generation. The main goal of an XSS attack is to circumvent the same-origin policy of the browser."
+    },
+    {
+      "heading": "How XSS Works",
+      "type": "bullet_points",
+      "intro": "",
+      "points": [
+        "Attackers inject malicious JavaScript into a vulnerable web page.",
+        "The victim's browser executes the malicious script.",
+        "The attacker compromises the user's interaction with the application, violating the Same-Origin Policy."
+      ]
+    },
+    {
+      "heading": "Types of XSS Vulnerabilities ",
+      "type": "stat_list",
+      "items": [
+        {
+          "subtitle": "Reflected XSS (Non-Persistent / Type 1)",
+          "detail": "Malicious scripts are injected into a website's response to a user's request. The injection happens through manipulated parameters in URLs, forms, or client-side requests. The payload is not stored on the server."
+        },
+        {
+          "subtitle": "Stored XSS (Persistent / Type 2)",
+          "detail": "Malicious scripts are stored on the server (e.g., in databases, comment sections). This is persistent because any user who views the compromised page will execute the script."
+        },
+        {
+          "subtitle": "DOM-Based XSS (Type 0)",
+          "detail": "The vulnerability exists in the client-side code (Document Object Model) rather than the server response. The attack is executed entirely within the victim's browser."
+        },
+        {
+          "subtitle": "Self-XSS",
+          "detail": "Tricks users into running malicious JavaScript in their browser's console. No direct website vulnerability is exploited, but successful attacks can lead to account compromise."
+        }
+      ]
+    },
+    {
+      "heading": "Consequences of XSS Attacks",
+      "type": "bullet_points",
+      "intro": "",
+      "points": [
+        "Session Hijacking and Cookie Theft (used to gain access to the application).",
+        "Data Theft and Account Takeover.",
+        "Website Defacement.",
+        "Malware Distribution or Redirection to other malicious websites (drive-by downloads)."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "title": "OS Command Injection Attacks",
+  "id": "INJ-005B",
+  "excerpt": "Focuses on OS Command Injection—a critical vulnerability that allows an adversary to execute arbitrary system commands, leading to full machine compromise. Includes prevention techniques.",
+  "full_content": [
+    {
+      "heading": "Definition and Impact",
+      "type": "paragraph",
+      "text": "An OS Command Injection is a severe attack where an adversary aims to execute arbitrary commands on the host operating system through a vulnerable application. A successful attack grants the attacker full control of the victim's machine. If the vulnerable application runs with elevated privileges (e.g., as root or administrator), the attacker's injected commands inherit these high-level permissions, leading to a much greater potential damage."
+    },
+    {
+      "heading": "The Core Vulnerability",
+      "type": "detailed_text",
+      "text": "The root cause is incorporating external, untrusted user input directly into the command string that is executed by the system shell (using functions like PHP's `exec()` or `system()`)."
+    },
+    {
+      "heading": "Key Exploit Vectors (Command Separators)",
+      "type": "bullet_points",
+      "intro": "Attackers use special characters to separate the intended command from their malicious injected command:",
+      "points": [
+        "Unix/Linux: Semicolon (`;`), Ampersand (`&` or `&&`), Pipe (`|` or `||`), Backtick (`` ` ``).",
+        "Windows: Ampersand (`&`), Double Ampersand (`&&`), Pipe (`|`), Caret (`^`)."
+      ]
+    },
+    {
+      "heading": "Prevention Techniques ",
+      "type": "bullet_points",
+      "intro": "Prevention requires strict control over user input used in system calls:",
+      "points": [
+        "Avoid User Input in Commands: Restructure code to avoid passing untrusted user input directly to system shell commands.",
+        "Input Filtering/Validation: Ensure that the input only contains expected characters (e.g., alphanumeric) and explicitly filter out or escape all command separator characters (`&`, `|`, `;`, etc.).",
+        "Use Safe APIs: Use built-in APIs that execute specific, controlled functions instead of general-purpose shell execution functions (e.g., using `escapeshellarg()` in PHP)."
+      ]
+    }
+  ]
+}

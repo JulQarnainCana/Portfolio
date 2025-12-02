@@ -1,0 +1,50 @@
+{
+  "title": "CWE-35: Path Traversal Attack",
+  "id": "CWE-012",
+  "excerpt": "Explains the Path Traversal (or Directory Traversal) vulnerability, how it uses the '..' symbol to escape restricted directories, the impact of the attack, and prevention methods.",
+  "full_content": [
+    {
+      "heading": "CWE-35 Definition and Mechanism",
+      "type": "paragraph",
+      "text": "A Path Traversal (or Directory Traversal) vulnerability allows an attacker to access files and directories stored outside of the intended or restricted directory on a web server or application. It exploits how file systems are organized, specifically the use of the double dot (`..` or `..\\`) symbol, which refers to the parent directory in the hierarchy."
+    },
+    {
+      "heading": "How the Attack Works ",
+      "type": "bullet_points",
+      "intro": "The attack involves manipulating file path variables to escape the root directory using repeated sequences of parent directory traversal (`../`).",
+      "points": [
+        "Vulnerable Application: A site that fetches files based on user input, e.g., `http://site.com/get-files.jsp?file=report.pdf`.",
+        "Exploit Payload: The attacker replaces the file parameter with a traversal sequence, e.g., `../../../../etc/passwd`.",
+        "Target Impact: This can grant access to highly sensitive system files, such as the Unix/Linux password file (`/etc/passwd` or `/etc/shadow`). "
+      ]
+    },
+    {
+      "heading": "Prevention and Mitigation",
+      "type": "stat_list",
+      "items": [
+        {
+          "subtitle": "Input Validation",
+          "detail": "Never allow user-supplied input to directly construct file paths. If necessary, use a 'whitelist' of accepted input or map the input to known, secure values."
+        },
+        {
+          "subtitle": "Canonicalization",
+          "detail": "Before accessing a file, simplify the path (canonicalize it) to its absolute form and verify that the final path resides within the authorized base directory."
+        },
+        {
+          "subtitle": "Use Least Privilege",
+          "detail": "The web application process should run with the lowest possible privileges, limiting the scope of files an attacker can read even if traversal is successful."
+        }
+      ]
+    },
+    {
+      "heading": "Testing Tools",
+      "type": "bullet_points",
+      "intro": "Tools used to detect directory traversal vulnerabilities:",
+      "points": [
+        "Burp Suite: Web application security testing platform with a scanner that can automatically detect directory traversal.",
+        "Dot Dot Pwn: A tool specifically designed to test for directory traversal vulnerabilities.",
+        "OWASP ZAP (Zed Attack Proxy): Free and open-source web application security scanner."
+      ]
+    }
+  ]
+}

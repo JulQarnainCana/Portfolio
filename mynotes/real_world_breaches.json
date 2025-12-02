@@ -1,0 +1,19 @@
+{
+  "title": "Real-World Data Breaches and Incidents",
+  "id": "BREACH-007B-2",
+  "excerpt": "Provides context on notable real-world data breaches and security violations in the Philippines, including the COMELEC hack and recent incidents involving major companies.",
+  "full_content": [
+    {
+      "heading": "Real-World Data Breaches in the Philippines (Context)",
+      "type": "bullet_points",
+      "intro": "Notable real-world data breaches and security violations in the country:",
+      "points": [
+        "COMELEC Database Hack: Exposed records of more than 55 million voters.",
+        "Jollibee: Investigated a data breach affecting 32 million customers (June 2024).",
+        "Wendy's Philippines: Leak exposed ~80,000 records.",
+        "Cebuana Lhuillier: A breach affected around 900,000 clients via an email server.",
+        "APTs: Campaigns like LuminousMoth have been observed targeting Philippine entities."
+      ]
+    }
+  ]
+}

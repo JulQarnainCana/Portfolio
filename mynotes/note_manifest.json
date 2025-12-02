@@ -1,0 +1,104 @@
+[
+  {
+    "title": "Career opportunities in IT security.",
+    "id": "CYBER-001",
+    "excerpt": "Covers high demand, flexible work setups, key team roles (Red vs. Blue), the role of the Security Operations Center (SOC), and the fundamental three pillars of cybersecurity.",
+    "filename": "cybersecurity_careers.json"
+  },
+  {
+    "title": "CIA Triad and Information Assurance",
+    "id": "CIA-002",
+    "excerpt": "Details the core model of information security (CIA Triad) and the general practice of Information Assurance.",
+    "filename": "cia_triad.json"
+  },
+  {
+    "title": "Public Key Infrastructure (PKI) and HTTPS Trust",
+    "id": "PKI-003",
+    "excerpt": "Explains PKI, components like CA and CSR, and the process of establishing trust for secure HTTPS communication.",
+    "filename": "pki_and_trust.json"
+  },
+  {
+    "title": "Web Application Basics: HTTP and Targeted Ports",
+    "id": "WEBSEC-004A",
+    "excerpt": "Covers fundamental HTTP Request Methods (GET, POST, PUT, HEAD, OPTIONS) and common network ports (443, 3389, 5650) targeted by attackers during a hack.",
+    "filename": "web_app_basics.json"
+  },
+  {
+    "title": "OWASP Top 10 (2021) and XSS Payloads",
+    "id": "OWASP-004B",
+    "excerpt": "Introduces the Open Web Application Security Project (OWASP) and details key vulnerabilities from the 2021 Top 10 list, including Broken Access Control and Injection, along with XSS payload examples.",
+    "filename": "owasp_top_10_2021.json"
+  },
+  {
+    "title": "OS Command Injection Attacks",
+    "id": "INJ-005B",
+    "excerpt": "Focuses on OS Command Injection—a critical vulnerability that allows an adversary to execute arbitrary system commands, leading to full machine compromise. Includes prevention techniques.",
+    "filename": "command_injection.json"
+  },
+  {
+    "title": "Malware Types and Analysis Methods",
+    "id": "MAL-005A",
+    "excerpt": "A detailed look into common malicious software like Ransomware, Viruses, and Trojans, along with the two primary methods used by analysts to study their behavior: Static vs. Dynamic Analysis.",
+    "filename": "malware_types.json" 
+  },
+  {
+    "title": "Vulnerability Cataloging and Exploit Tools",
+    "id": "VULN-006",
+    "excerpt": "A brief overview of systems used to catalog and track security vulnerabilities and exploits.",
+    "filename": "vuln_cataloging.json"
+  },
+  {
+    "title": "IT Security and Information Assurance",
+    "id": "ASSURE-007A",
+    "excerpt": "Explains the critical role of IT Security and the comprehensive practice of Information Assurance (IA) in protecting systems and managing risks.",
+    "filename": "info_assurance_ia.json"
+  },
+  {
+    "title": "Threat Actors, TTPs, and Phishing",
+    "id": "THREAT-007B-1",
+    "excerpt": "Details the main goal of studying Threat Actors and their TTPs (Tactics, Techniques, and Procedures), including common methods like Phishing, and defines the different types of malicious actors.",
+    "filename": "threat_actors_ttps.json"
+  },
+  {
+    "title": "Breaches & Incidents",
+    "id": "BREACH-007B-2",
+    "excerpt": "Provides context on notable real-world data breaches and security violations in the Philippines, including the COMELEC hack and recent incidents involving major companies.",
+    "filename": "real_world_breaches.json"
+  },
+  {
+    "title": "Cloud Computing and Virtualization Concepts",
+    "id": "CLOUD-008",
+    "excerpt": "Explains hypervisor types (Bare-metal and Hosted), Content Delivery Networks (CDN), various Cloud Deployment Models, and the function of a Cloud Access Security Broker (CASB).",
+    "filename": "cloud_and_virtualization.json"
+  },
+  {
+    "title": "Digital Forensics and Incident Response (DFIR)",
+    "id": "DFIR-009",
+    "excerpt": "Details the four main areas of forensic analysis: File System Analysis, Network Logs, System Logs, and System Memory.",
+    "filename": "dfir_forensics.json"
+  },
+  {
+    "title": "Encryption Fundamentals",
+    "id": "ENCRYPT-010",
+    "excerpt": "Covers the four principles of cryptography, differences between symmetric and asymmetric ciphers, the Diffie-Hellman key exchange, and the roles of Certificate Authorities and X.509 certificates.",
+    "filename": "encryption_fundamentals.json"
+  },
+  {
+    "title": "CWE-79: Cross-Site Scripting (XSS) Details",
+    "id": "XSS-011",
+    "excerpt": "Detailed explanation of CWE-79, how XSS works, the three main types of XSS (Reflected, Stored, DOM-Based), and the resulting attack consequences.",
+    "filename": "xss_cwe_79.json"
+  },
+  {
+    "title": "CWE-35: Path Traversal Attack",
+    "id": "CWE-012",
+    "excerpt": "Explains the Path Traversal (or Directory Traversal) vulnerability, how it uses the '..' symbol to escape restricted directories, the impact of the attack, and prevention methods.",
+    "filename": "cwe_35_path_traversal.json"
+  },
+  {
+    "title": "Network Traffic Analysis and Wireshark",
+    "id": "NET-013",
+    "excerpt": "Introduction to Network Traffic Analysis, the OSI model, and the use of Wireshark for deep packet inspection, including filters and stream following.",
+    "filename": "network_traffic_analysis.json"
+  }
+]

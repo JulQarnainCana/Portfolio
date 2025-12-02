@@ -1,0 +1,51 @@
+{
+  "title": "Cloud Computing and Virtualization Concepts",
+  "id": "CLOUD-008",
+  "excerpt": "Explains hypervisor types (Bare-metal and Hosted), Content Delivery Networks (CDN), various Cloud Deployment Models (Public, Private, Hybrid, Community), and the function of a Cloud Access Security Broker (CASB).",
+  "full_content": [
+    {
+      "heading": "Hypervisors (Two Types) ",
+      "type": "comparison",
+      "left_title": "Type 1: Native (Bare-metal)",
+      "left_items": [
+        "Operates directly on the system’s hardware, managing virtual machines.",
+        "Does not require a host operating system."
+      ],
+      "right_title": "Type 2: Hosted",
+      "right_items": [
+        "Runs as a software application within a host operating system.",
+        "Provides virtualization on top of the existing OS."
+      ]
+    },
+    {
+      "heading": "Content Delivery Networks (CDN)",
+      "type": "detailed_text",
+      "text": "A Content Delivery Network (CDN) is a globally distributed network of servers that deliver web content and services to users. Its primary function is to automatically select the server closest to the user’s location to reduce latency and improve loading or download speed."
+    },
+    {
+      "heading": "Cloud Deployment Models",
+      "type": "bullet_points",
+      "intro": "Ang Cloud Deployment Models ay naglalarawan kung paano ikinakalat at mina-manage ang cloud resources:",
+      "points": [
+        "Public Cloud: Pinakakaraniwang modelo. Resources ay ibinibigay sa Internet ng third-party providers (e.g., Google Drive, AWS).",
+        "Private Cloud: Nag-ooperate sa loob ng private infrastructure kung saan ang organization ang nagma-manage at nagse-secure ng lahat ng resources (e.g., AWS GovCloud (US)).",
+        "Hybrid Cloud: Pinagsasama ang private at public cloud environments.",
+        "Community Cloud: Shared infrastructure sa pagitan ng maraming organizations na may parehong layunin.",
+        "Single Tenancy: Bawat customer (tenant) ay may dedicated set ng resources o infrastructure.",
+        "Multitenancy: Maraming customers ang nag-sha-share sa parehong cloud infrastructure habang ang data ay isolated."
+      ]
+    },
+    {
+      "heading": "Cloud Access Security Broker (CASB)",
+      "type": "bullet_points",
+      "intro": "A CASB acts as a security checkpoint between users and cloud applications, ensuring secure and compliant connections. It provides visibility and control over how cloud services are accessed and used.",
+      "points": [
+        "Enables Single Sign-On (SSO).",
+        "Enforces access controls and authorization policies.",
+        "Detects and removes malware and unauthorized devices.",
+        "Monitors user behavior and resource activity.",
+        "Minimizes the risk of data breaches and unauthorized access."
+      ]
+    }
+  ]
+}

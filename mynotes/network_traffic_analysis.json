@@ -1,0 +1,47 @@
+{
+  "title": "Network Traffic Analysis and Wireshark",
+  "id": "NET-013",
+  "excerpt": "Introduction to Network Traffic Analysis, the OSI model, and the use of Wireshark for deep packet inspection, including filters and stream following.",
+  "full_content": [
+    {
+      "heading": "What is Network Traffic Analysis (NTA)?",
+      "type": "paragraph",
+      "text": "Network Traffic Analysis (NTA) is the process of capturing, inspecting, and analyzing network data flow to ensure security, optimize performance, and troubleshoot issues. It is key to understanding and securing modern networks."
+    },
+    {
+      "heading": "OSI and TCP/IP Models",
+      "type": "stat_list",
+      "description": "[Image of the 7-Layer OSI Model and 4-Layer TCP/IP Model]",
+      "items": [
+        {
+          "subtitle": "OSI Model",
+          "detail": "A 7-layer reference model for network communications, with layers ranging from Physical (Layer 1 - Bit) to Application (Layer 7 - FTP, HTTP)."
+        },
+        {
+          "subtitle": "Key Layers for Analysis",
+          "detail": "Transport (Layer 4) manages end-to-end connections (TCP, UDP), and Network (Layer 3) handles addressing and routing (IP). The Application Layer (Layer 7) involves protocols like HTTP and FTP."
+        }
+      ]
+    },
+    {
+      "heading": "Wireshark: Deep Packet Inspection Tool",
+      "type": "bullet_points",
+      "intro": "Wireshark is a powerful and versatile tool used for deep packet inspection and traffic analysis.",
+      "points": [
+        "Capture Filters (e.g., in tcpdump): Applied before packets are analyzed; they determine which packets are written to the capture file (e.g., `host x.x.x.x` or `tcp port 80`).",
+        "Display Filters (e.g., in Wireshark): Applied after packets are captured; they control which packets are displayed in the GUI (e.g., `ip.addr == x.x.x.x` or `tcp.port == x`).",
+        "Stream Following: Allows Wireshark to recreate the entire TCP stream in a readable format, enabling the extraction of data (images, files, etc.) from the captured conversation."
+      ]
+    },
+    {
+      "heading": "Wireshark Statistics and Insights",
+      "type": "bullet_points",
+      "intro": "",
+      "points": [
+        "Provides detailed reports on network traffic.",
+        "Can identify Top Talkers (hosts sending the most data) and specific Conversations between two hosts.",
+        "Offers breakdowns by IP and Protocol."
+      ]
+    }
+  ]
+}

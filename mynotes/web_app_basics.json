@@ -1,0 +1,29 @@
+{
+  "title": "Web Application Basics: HTTP and Targeted Ports",
+  "id": "WEBSEC-004A",
+  "excerpt": "Covers fundamental HTTP Request Methods (GET, POST, PUT, HEAD, OPTIONS) and common network ports (443, 3389, 5650) targeted by attackers during a hack.",
+  "full_content": [
+    {
+      "heading": "HTTP Request Methods",
+      "type": "bullet_points",
+      "intro": "These methods define the intended action for a given resource on a web server:",
+      "points": [
+        "GET: Retrieves data from a server without modifying it.",
+        "POST: Sends data to the server to create or update a resource.",
+        "PUT: Updates or replaces an existing resource on the server.",
+        "HEAD: Retrieves only the headers from a resource, not the actual content.",
+        "OPTIONS: Displays the supported HTTP methods and communication options for a target resource."
+      ]
+    },
+    {
+      "heading": "Common Ports Targeted During a Hack",
+      "type": "bullet_points",
+      "intro": "Attackers frequently target these network ports due to their function:",
+      "points": [
+        "443 (HTTPS): Secure web traffic; often targeted for encrypted attacks or data interception.",
+        "3389 (RDP - Remote Desktop Protocol): Used for remote access; a frequent target for brute-force attacks.",
+        "5650: Sometimes exploited by attackers for unauthorized connections or backdoor access."
+      ]
+    }
+  ]
+}

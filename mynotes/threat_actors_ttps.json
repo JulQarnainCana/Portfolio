@@ -1,0 +1,22 @@
+{
+  "title": "Threat Actors, TTPs, and Phishing",
+  "id": "THREAT-007B-1",
+  "excerpt": "Details the main goal of studying Threat Actors and their TTPs (Tactics, Techniques, and Procedures), including common methods like Phishing, and defines the different types of malicious actors.",
+  "full_content": [
+    {
+      "heading": "Threat Actors and TTPs ",
+      "type": "paragraph",
+      "text": "The main goal of studying **Threat Actors & TTPs** (Tactics, Techniques, and Procedures) is knowing who the attackers are (individuals, groups, cybercriminals, or state-sponsored organizations) and how they function. **TTPs** are the strategies they employ to execute assaults."
+    },
+    {
+      "heading": "Types of Threat Actors",
+      "type": "detailed_text",
+      "text": "Threat actors include insider threats, hackers, cybercriminals, and even state-sponsored organizations. These individuals or groups carry out malevolent actions against networks, systems, or organizations."
+    },
+    {
+      "heading": "Phishing as a Common TTP",
+      "type": "detailed_text",
+      "text": "Phishing is a popular technique used by threat actors to obtain initial access. They trick people into disclosing private information or clicking on harmful links to execute their assaults."
+    }
+  ]
+}

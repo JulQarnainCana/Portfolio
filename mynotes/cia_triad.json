@@ -1,0 +1,39 @@
+{
+  "title": "CIA Triad and Information Assurance",
+  "id": "CIA-002",
+  "excerpt": "Details the core model of information security (CIA Triad) and the general practice of Information Assurance.",
+  "full_content": [
+    {
+      "heading": "The CIA Triad (The Foundational Model)",
+      "type": "paragraph",
+      "text": "The **CIA Triad** is the core model in information security, guiding policies and practices to protect critical information and ensure system reliability. "
+    },
+    {
+      "heading": "Confidentiality",
+      "type": "bullet_points",
+      "intro": "Information must only be available to **authorized parties**. Violations include unauthorized access or disclosure.",
+      "points": [
+        "Examples of protected data: Personal data, Healthcare Records, Intellectual Property.",
+        "Techniques used: Passwords, Two-factor authentication (2FA), Data Encryption."
+      ]
+    },
+    {
+      "heading": "Integrity",
+      "type": "bullet_points",
+      "intro": "Information must remain **consistent, trustworthy, and accurate**.",
+      "points": [
+        "Examples: Bank Transactions, Document Editing, Online Reviews, Database Management.",
+        "Techniques used: Data Validation, Version Control, Hashing/Checksums."
+      ]
+    },
+    {
+      "heading": "Availability",
+      "type": "bullet_points",
+      "intro": "Information must remain **accessible** to authorized parties even during failures.",
+      "points": [
+        "Examples: Healthcare Systems, Cloud Services.",
+        "Techniques used: DDoS Protection, Backups, Load Balancers."
+      ]
+    }
+  ]
+}

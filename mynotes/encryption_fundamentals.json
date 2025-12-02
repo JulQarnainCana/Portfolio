@@ -1,0 +1,61 @@
+{
+  "title": "Encryption Fundamentals",
+  "id": "ENCRYPT-010",
+  "excerpt": "Covers the four principles of cryptography, differences between symmetric and asymmetric ciphers, the Diffie-Hellman key exchange, and the roles of Certificate Authorities and X.509 certificates.",
+  "full_content": [
+    {
+      "heading": "Principles of Cryptography ",
+      "type": "bullet_points",
+      "intro": "",
+      "points": [
+        "Encryption: The process of converting information or data into a code, especially to prevent unauthorized access.",
+        "Authentication: Verifying the identity of a user, process, or device.",
+        "Integrity: Ensuring data remains consistent, trustworthy, and accurate throughout its lifecycle.",
+        "Non-repudiation: Providing proof that a message originated from a specific sender, preventing the sender from later denying they sent it."
+      ]
+    },
+    {
+      "heading": "Hash Functions, Ciphers, and Key Exchange ",
+      "type": "stat_list",
+      "items": [
+        {
+          "subtitle": "Hash Functions",
+          "detail": "A mathematical algorithm that maps data of arbitrary size to a hash value of a fixed size. They are primarily used to ensure integrity by detecting if data has been tampered with."
+        },
+        {
+          "subtitle": "Symmetric vs. Asymmetric Ciphers",
+          "detail": "Symmetric ciphers use one session key for both encryption and decryption (e.g., DES, AES, RC4-6). Asymmetric ciphers use two different session keys (a public key and a private key)."
+        },
+        {
+          "subtitle": "Key Exchange Algorithms (e.g., Diffie-Hellman)",
+          "detail": "The Diffie-Hellman key exchange allows two parties to compute a shared secret key for secured communication by exchanging calculated public keys, even over an unsecured channel. "
+        }
+      ]
+    },
+    {
+      "heading": "Encryption in Transit ",
+      "type": "comparison",
+      "left_title": "End-to-End Encryption (E2EE)",
+      "left_items": [
+        "Data is encrypted at the sender's device and remains encrypted until it reaches the final recipient's device.",
+        "Only the communicating parties can read the message."
+      ],
+      "right_title": "Transport Encryption (e.g., HTTPS/TLS)",
+      "right_items": [
+        "Encrypts data over the link between the user and the server.",
+        "The server is able to decrypt and read the message upon arrival. "
+      ]
+    },
+    {
+      "heading": "Certificate Authorities (CAs) and X.509 Certificates ",
+      "type": "bullet_points",
+      "intro": "An X.509 digital certificate is used to verify the identity of the holder and provide their public key.",
+      "points": [
+        "A Certificate Authority (CA) is a trusted entity that validates identity, issues certificates, and signs them with its own digital signature.",
+        "A Trusted Root-CA is a CA whose public key is pre-installed in browsers, automatically making their signed certificates trusted.",
+        "An applicant must generate a Certificate Signing Request (CSR) and submit it to the CA for validation to get a certificate.",
+        "The CA's digital signature validates the authenticity and integrity of the certificate."
+      ]
+    }
+  ]
+}

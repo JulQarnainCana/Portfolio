@@ -1,0 +1,43 @@
+{
+  "title": "OWASP Top 10 (2021) and XSS Payloads",
+  "id": "OWASP-004B",
+  "excerpt": "Introduces the Open Web Application Security Project (OWASP) and details key vulnerabilities from the 2021 Top 10 list, including Broken Access Control and Injection, along with XSS payload examples.",
+  "full_content": [
+    {
+      "heading": "OWASP (Open Web Application Security Project)",
+      "type": "paragraph",
+      "text": "The OWASP is a nonprofit organization dedicated to improving software security. It provides **guidelines, tools, and documentation** that help developers identify and mitigate vulnerabilities in **web applications."
+    },
+    {
+      "heading": "OWASP Top 10 (2021) Vulnerabilities ",
+      "type": "stat_list",
+      "items": [
+        {
+          "subtitle": "A01:2021-Broken Access Control",
+          "detail": "Occurs when an application doesn't properly enforce restrictions on what authenticated users are allowed to do. **Example (IDOR):** An attacker changes an ID parameter in a URL (e.g., `id=12345` to `id=67890`) to view another user's account without authorization."
+        },
+        {
+          "subtitle": "A03:2021-Injection",
+          "detail": "Flaws occur when an application sends **untrusted data to an interpreter** (like a database query or OS command) without proper validation, allowing an attacker to execute unintended commands. **Impact:** Remote Code Execution (RCE), system backdoors, and data corruption."
+        },
+        {
+          "subtitle": "A04:2021-Insecure Design",
+          "detail": "Risks related to **design and architectural flaws**, not just flaws in code implementation. **Example:** A 'forgot password' feature that asks for a widely known, static piece of information (e.g., mother's maiden name) instead of a temporary reset token."
+        },
+        {
+          "subtitle": "A07:2021-Identification and Authentication Failures",
+          "detail": "Flaws in functions responsible for user identity, authentication, and session management (e.g., weak password handling, poor MFA implementation). **Example:** Lack of rate limiting on login attempts (Brute-Force Attack)."
+        },
+        {
+          "subtitle": "A09:2021-Security Logging and Monitoring Failures",
+          "detail": "Flaws where logging, alerting, and real-time active security monitoring are insufficient or ineffective."
+        },
+        {
+          "subtitle": "A10:2021-Server-Side Request Forgery (SSRF)",
+          "detail": "The application is tricked into fetching a remote resource from a user-supplied URL. The request is performed on the attacker's behalf, often targeting **internal resources** (e.g., `http://localhost/admin` or cloud metadata services)."
+        }
+      ]
+    }
+
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "title": "Digital Forensics and Incident Response (DFIR)",
+  "id": "DFIR-009",
+  "excerpt": "Details the four main areas of forensic analysis: File System Analysis, Network Logs, System Logs, and System Memory.",
+  "full_content": [
+    {
+      "heading": "File System Analysis",
+      "type": "bullet_points",
+      "intro": "Examining a forensic image (a low-level copy) of a storage device reveals valuable information.",
+      "points": [
+        "Information revealed includes installed programs, created or deleted files, and partially overwritten data."
+      ]
+    },
+    {
+      "heading": "Network Logs",
+      "type": "detailed_text",
+      "text": "These logs capture network packet data, helping determine if an attack occurred, how it happened, and what systems were involved."
+    },
+    {
+      "heading": "System Logs",
+      "type": "detailed_text",
+      "text": "Logs stored by client and server systems record important events and activities that help investigators trace actions taken on a device."
+    },
+    {
+      "heading": "System Memory",
+      "type": "detailed_text",
+      "text": "Attackers may execute malicious programs directly in memory without saving them to disk, making memory analysis crucial."
+    }
+  ]
+}

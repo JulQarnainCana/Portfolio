@@ -1,0 +1,21 @@
+{
+  "title": "IT Security and Information Assurance",
+  "id": "ASSURE-007A",
+  "excerpt": "Explains the critical role of IT Security and the comprehensive practice of Information Assurance (IA) in protecting systems and managing risks, focusing on the protection scope (integrity, availability, authenticity, non-repudiation, and confidentiality).",
+  "full_content": [
+    {
+      "heading": "IT Security",
+      "type": "paragraph",
+      "text": "IT Security is critical for protecting information and systems."
+    },
+    {
+      "heading": "Information Assurance (IA)",
+      "type": "bullet_points",
+      "intro": "The overall practice of assuring information and managing risks is called Information Assurance.",
+      "points": [
+        "Focus: Managing risks related to the use, processing, storage, and transmission of information or data.",
+        "Protection Scope: It protects the integrity, availability, authenticity, non-repudiation, and confidentiality of user data. "
+      ]
+    }
+  ]
+}

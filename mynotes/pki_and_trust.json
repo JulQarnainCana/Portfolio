@@ -1,0 +1,50 @@
+{
+  "title": "Public Key Infrastructure (PKI) and HTTPS Trust",
+  "id": "PKI-003",
+  "excerpt": "Explains PKI, its core components like Certificate Authority (CA), Certificate Signing Request (CSR), and the step-by-step process of establishing trust for secure HTTPS communication.",
+  "full_content": [
+    {
+      "heading": "PKI Framework Overview",
+      "type": "paragraph",
+      "text": "A Public Key Infrastructure (PKI) is a framework used to manage digital certificates and public key encryption. Microsoft’s specific implementation of a PKI system is called Active Directory Certificate Services (ADCS). The primary goal of PKI is to provide a reliable environment for secure electronic transactions and communications."
+    },
+    {
+      "heading": "PKI Core Components",
+      "type": "bullet_points",
+      "intro": "These components are crucial for the issuance and management of digital certificates:",
+      "points": [
+        "Certificate Authority (CA): A trusted organization that validates identities and issues digital certificates (e.g., Let's Encrypt, DigiCert).",
+        "Trusted Root CA: The CA’s public key is pre-installed in web browsers and operating systems, making it automatically trusted by the client.",
+        "Certificate Template: A set of configurations and policies that define how and when a CA can issue a certificate.",
+        "Certificate Signing Request (CSR): A file sent to a CA to request a signed certificate. Crucially, the Private Key is never included in the CSR."
+      ]
+    },
+    {
+      "heading": "Key Pair Generation (Applicant’s Role)",
+      "type": "comparison",
+      "left_title": "Private Key (Secret)",
+      "left_items": [
+        "Must remain secret and highly protected.",
+        "Used for digitally signing data (proving identity).",
+        "Used for decrypting information sent by others."
+      ],
+      "right_title": "Public Key (Shared)",
+      "right_items": [
+        "Shared openly via the digital certificate.",
+        "Used by others to encrypt data intended for the applicant.",
+        "Used by others to verify digital signatures created by the applicant."
+      ]
+    },
+    {
+      "heading": "Process of Trust in HTTPS Communication",
+      "type": "bullet_points",
+      "intro": "This is the sequence of events when a client (browser) connects to a secure server:",
+      "points": [
+        "1. The server sends its signed certificate (containing its Public Key) to the client.",
+        "2. The client’s browser finds the CA’s public key in its list of Trusted Root CAs.",
+        "3. The browser uses the trusted CA’s public key to verify the digital signature on the server's certificate. ",
+        "4. Once the signature is verified, the browser trusts the server’s public key and establishes a secure HTTPS connection (often using TLS/SSL)."
+      ]
+    }
+  ]
+}
